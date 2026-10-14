@@ -1,0 +1,21 @@
+{
+  "name": "oh-my-openagent-v2-bridge",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenCode V2 plugin that runs the full V1 oh-my-openagent (oh-my-opencode) engine through a V1->V2 compatibility bridge.",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.20"
+  },
+  "dependencies": {
+    "oh-my-opencode": "5.1.33",
+    "zod": "^4.1.8"
+  },
+  "vendored": {
+    "note": "node_modules/ holds oh-my-opencode@5.1.33 and zod vendor copies so the plugin loads with no network access. Re-vendor with scripts/vendor.sh."
+  }
+}

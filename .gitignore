@@ -1,0 +1,6 @@
+node_modules/
+ref/
+ref-client/
+*.tgz
+bridge.log
+.DS_Store
